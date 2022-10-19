@@ -1,4 +1,3 @@
-
 class Person {
     constructor(altura, peso, yearOfBirth){      
         this.alura = altura;
@@ -18,11 +17,7 @@ class Person {
         return  2022 - this.yearOfBirth;
     }
 
-    printAll(){
-        for(clases of this){
-            return this[i] + clases;
-        }
-    }
+  
 
     printHobbies(){
         return this.hobbies;
@@ -30,9 +25,11 @@ class Person {
 }
 
 
-let persona = new Person(180, 70, 1990);
+module.exports = {Person}
 
-console.log(persona);
 
-console.log(persona.printAll());
-
+// printAll(){
+//     for(clases of this){
+//         return this[i] + clases;
+//     }
+// }
