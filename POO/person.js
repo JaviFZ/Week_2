@@ -5,8 +5,8 @@ class Person {
     constructor(altura, peso, yearOfBirth){      
         this.alura = altura;
         this.peso = peso;
-        this.colorPelo;
-        this.colorOjos;
+        this.colorPelo = "Castaño";
+        this.colorOjos = "verdes";
         this.yearOfBirth = yearOfBirth;
         this.hobbies = ["futbol", "baloncesto", "nadar"];
     }
