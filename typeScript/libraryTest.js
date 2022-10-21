@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var book_1 = require("./book");
+var library_1 = require("./library");
+var libro1 = new book_1.Book("Batman", 145, "345346-CB33252", "Bob Kane", "Planeta");
+var libro2 = new book_1.Book("Spiderman", 465, "345346-CB33252", "Stan Lee", "Santillana");
+var libro3 = new book_1.Book("Elden Ring", 966, "235464-AN33252", "R. R. Martin", "From");
+var books = [libro1, libro2, libro3];
+var library = new library_1.Library(books, "address", "Javier");
+// console.log(library.findByAuthor("Stan Lee"));
+console.log(library.getNumberOfBooks());
+console.log(library.toString());
+console.log(library.findByAuthor("Stan Lee"));
