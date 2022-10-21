@@ -7,24 +7,25 @@ let people = [person, person, person];
 
 export class Contacts {
 
-    public people;
+    public people : Person[]
     
     constructor(){
         this.people = people;
     }
 
+    // // METODO
+
     public printCalendar() : void {
         for (let p in this) {
-            console.log(this[p]);
-        }
+            console.log(this[p]);  
+        }  
     }
-
 }
 
-let contacts = new Contacts();
+// let contacts = new Contacts();
 
-// console.log(contacts);
+// // console.log(contacts);
 
-contacts.printCalendar();
+// contacts.printCalendar();
 
 

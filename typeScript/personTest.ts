@@ -10,4 +10,8 @@ console.log(person.yearOfBirth(2022));
 
 console.log(person.setAddress("Calle"));
 
+console.log(person.getAddress());
+
+
+
 
