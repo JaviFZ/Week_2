@@ -64,7 +64,11 @@ export class Mobile{
 
     // // METODOS
 
-    
+    public characString () : string {
+        return "The characteristics of the mobile " + this.name + " are" + "\n" +
+        "Name: " + this.name + "\n" + 
+        "Trademark: " + 
+    }
 
 }
 
