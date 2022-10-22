@@ -48,14 +48,18 @@ console.log(myRevert(array));
 // // La cabecera de la función tendrá el siguiente aspecto: function isRainbow(colors)
 
 
-let rainbow = ["rojo", "naranja", "amarillo", "verde", "cian", "azul", "violeta"];
+let rainbow : string[] = ["rojo", "naranja", "amarillo", "verde", "cian", "azul", "violeta"];
+
+let arrayColors : string[] = ["mostaza", "rojo", "cian"];
 
 
-// function isRainbow (rainbow : string[]) {
-//     for (colores of rainbow){
-//         if (colores == )
-//     }
-// }
+function isRainbow (arrayColors : string[]) {
+    for (colores of rainbow){
+        if (colores == "rojo" ){
+
+        }
+    }
+}
 
 
 
