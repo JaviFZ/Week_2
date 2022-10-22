@@ -7,7 +7,7 @@ let myMobile3 : Mobile = new Mobile("iPhone", "Apple", "10", "green", 1800);
 
 let myMobiles : Mobile[] = [myMobile, myMobile2, myMobile3];
 
-console.log(myMobile);
+// console.log(myMobiles.charactString());
 
 // Mobile.setName("juan");
 
