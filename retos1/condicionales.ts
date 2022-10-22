@@ -33,7 +33,7 @@ function zodiac(day : number, month : string)  {
 }
 
 
-console.log(zodiac(13, "marzo"));
+console.log(zodiac(14, "junio"));
 
 
 
@@ -57,7 +57,7 @@ function continent(country : string) {
     }
 }
 
-continent("Egipto");
+continent("Italia");
 
 
 
@@ -78,4 +78,4 @@ function isEven ( n : number) {
 }
 
 
-console.log(isEven(4));
+console.log(isEven(3));

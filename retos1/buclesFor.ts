@@ -5,10 +5,10 @@
 
 
 function evenNumbers (num : number) {
-    let cuenta = 0;
+    let cuenta : number[] = []
     for (let i = 0; i <= num; i++){
         if ((i % 2) !== 0){
-            cuenta += i;
+            cuenta.push(i);
         } 
     } return cuenta;
 }
@@ -26,17 +26,20 @@ console.log(evenNumbers(10));
 // // La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr)
 
 
-let array = [1, 2, 3, 4];
+let numeros = [4, 27, 7, 100];
 
 
-function myRevert(array : number[]) {
-    for (let n of array){
-        n[0] = n[3]
-    } return array;
+
+
+function myRevert(numeros : number[]) {
+    let salida : number[] = []
+    for (let i = numeros.length - 1; i >= 0; i--) {
+      salida.push(numeros[i]);
+    }
+    return salida;
 }
 
-
-console.log(myRevert(array));
+console.log(myRevert(numeros));
 
 
 
@@ -48,20 +51,35 @@ console.log(myRevert(array));
 // // La cabecera de la función tendrá el siguiente aspecto: function isRainbow(colors)
 
 
-let rainbow : string[] = ["rojo", "naranja", "amarillo", "verde", "cian", "azul", "violeta"];
+let rainbow : string[] = ["rojo", "naranja", "amarillo", "verde", "azul", "violeta"];
 
-let arrayColors : string[] = ["mostaza", "rojo", "cian"];
+let arrayColors : string[] = ["rojo", "rojo", "rojo"];
 
 
 function isRainbow (arrayColors : string[]) {
-    for (colores of rainbow){
-        if (colores == "rojo" ){
 
+    for (let i = 0; i <= arrayColors.length; i++){
+        if (arrayColors[i] == "rojo" || arrayColors[i] == "naranja" || arrayColors[i] == "amarillo" || arrayColors[i] == "verde" || arrayColors[i] == "azul" || arrayColors[i] == "violeta"){
+            return true;
+        } else {
+            return false;
         }
     }
 }
 
+// function isRainbow2 (arrayColors : string[]) {
 
+//     for (colors of rainbow){
+//         if ("rojo" == colors || arrayColors[i] == "naranja" || arrayColors[i] == "amarillo" || arrayColors[i] == "verde" || arrayColors[i] == "azul" || arrayColors[i] == "violeta"){
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+// }
+
+
+console.log(isRainbow(arrayColors));
 
 
 
@@ -70,3 +88,17 @@ function isRainbow (arrayColors : string[]) {
 // // 5. Realizar una función que te devuelva la suma del numero de caracteres de las palabras
 // // almacenadas en un array.
 // // La cabecera de la función tendrá el siguiente aspecto: function add(myWords)
+
+let myWorlds : string[] = ["Coche", "moto", "patin"];
+
+
+
+function add( myWorlds:string[]) {
+    let coleccion : number[] = []
+    for (let i=0 ; i<=myWorlds.length; i++){
+        coleccion.push( myWorlds[i].length[i] += myWorlds[i].length[i]);
+    }return coleccion;
+}
+
+
+console.log(add(myWorlds));

@@ -39,7 +39,7 @@ function zodiac(day, month) {
         return "Piscis";
     }
 }
-console.log(zodiac(13, "marzo"));
+console.log(zodiac(14, "junio"));
 // // Realizar un procedimiento que dado el nombre de un país te imprima en que continente
 // // estás. (Max 5 países por continente).
 // //La cabecera del procedimiento tendrá el siguiente aspecto: function continent(country)
@@ -57,7 +57,7 @@ function continent(country) {
         console.log("Europa");
     }
 }
-continent("Egipto");
+continent("Italia");
 // // Realizar una función que te imprima por consola el siguiente mensaje:
 // // - “El numero es par”, si el numero introducido como parámetro de entrada es par
 // // - “El numero es impar”, si el numero introducido como parámetro de entrada es impar
@@ -70,4 +70,4 @@ function isEven(n) {
         return "El número es impar";
     }
 }
-console.log(isEven(4));
+console.log(isEven(3));
