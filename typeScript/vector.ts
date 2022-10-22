@@ -1,6 +1,6 @@
 
 
-class Vector {
+export class Vector {
 
     private elements : number[];
     public n : number;
@@ -8,14 +8,19 @@ class Vector {
 
 
     constructor(n : number, k : number){
-        this.elements;
+        let elements : number[] = [];
+        for (let i=0; i < n ;i++){   
+            elements.push(Math.floor(Math.random() * k));  
+        } 
+        switch(this.elements){
+            case  elements:
+            break;
+
+        }
+        this.elements = elements;
         this.n = n;
         this.k = k;
 
-        for (let i=0; i < n ;i++){   
-            let elements =  Math.floor(Math.random() * k ;
-            this.elements.push(elements);  
-        } 
         
     }
 
@@ -31,26 +36,61 @@ class Vector {
 
     // // METODOS
 
-    print(){
-        return Vector;
+    public print(): Vector{
+        return this
     }
 
-    // add(v1:Vector) : Vector {
-    //     return this.elements + v1;
-    // }
 
-    // subs(v1:Vector) : Vector {
 
-    // }
+    public add(v1:Vector) : void {
+        let vectorSumado : number[] = [];
+        for (let i = 0; i < this.elements.length; i++){
+            // if (this.elements.length == v1.getElements.length){
+            let result = this.elements[i] + v1.getElements()[i];
+            vectorSumado.push(result);
+            // }
+        }
+        this.elements = vectorSumado;
+    }
 
-    // mult(v1:Vector) : Vector {
 
-    // }
 
-    // multNumber(n : number) : Vector {
+    public subs(v1:Vector) : void {
+        let vectorRestado : number[] = [];
+        for (let i = 0; i < this.elements.length; i++){
+            // if (this.elements.length == v1.getElements.length){
+            let result = this.elements[i] - v1.getElements()[i];
+            vectorRestado.push(result);
+            // }
+        }
+        this.elements = vectorRestado;
+    }
 
-    // }
+
+
+    public mult(v1:Vector) : void {
+        let vectorMulti : number[] = [];
+        for (let i = 0; i < this.elements.length; i++){
+            // if (this.elements.length == v1.getElements.length){
+            let result = this.elements[i] * v1.getElements()[i];
+            vectorMulti.push(result);
+            // }
+        }
+        this.elements = vectorMulti;
+    }
+
+
+
+
+    public multNumber(n : number) : void {
+        let vectorProd : number[] = [];
+        for (let i = 0; i < this.elements.length; i++){
+            let result = this.elements[i] * n;
+            vectorProd.push(result);
+        }
+        this.elements = vectorProd;
+    }
 }      
 
 
-let vector = new Vector(8, 10)
+// let vector = new Vector(8, 10)

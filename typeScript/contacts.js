@@ -5,18 +5,18 @@ var person_1 = require("./person");
 var person = new person_1.Person("Javi", 32, "Paz");
 var people = [person, person, person];
 var Contacts = /** @class */ (function () {
-    function Contacts() {
+    function Contacts(people) {
         this.people = people;
     }
     // // METODO
     Contacts.prototype.printCalendar = function () {
-        for (var p in this) {
-            console.log(this[p]);
+        for (var person_2 in this.people) {
+            console.log(person_2);
         }
     };
     return Contacts;
 }());
 exports.Contacts = Contacts;
-// let contacts = new Contacts();
-// // console.log(contacts);
-// contacts.printCalendar();
+var contacts = new Contacts(people);
+console.log(contacts);
+contacts.printCalendar();

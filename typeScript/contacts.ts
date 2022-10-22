@@ -9,23 +9,23 @@ export class Contacts {
 
     public people : Person[]
     
-    constructor(){
+    constructor(people : Person[]){
         this.people = people;
     }
 
     // // METODO
 
     public printCalendar() : void {
-        for (let p in this) {
-            console.log(this[p]);  
+        for (let person in this.people) {
+            console.log(person);  
         }  
     }
 }
 
-// let contacts = new Contacts();
+let contacts = new Contacts(people);
 
-// // console.log(contacts);
+console.log(contacts);
 
-// contacts.printCalendar();
+contacts.printCalendar();
 
 
