@@ -73,14 +73,7 @@ export class Mobile{
         "Price: " + this.price 
     }
 
-    // public characString(): string {
-    //     let res: string = "";
-    //     for (let characts of mobiles){
-    //         res += characts.toString()
-    //     } 
-    //     return res;
-
-    // }   
+      
 }
 
 

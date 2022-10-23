@@ -1,69 +1,41 @@
-import {Mobile} from "./mobile.js"
-
 // let mobile = new Mobile("Javi", "Apple", "IPhone", "Green", 1234);
-
-
 export class MobileCollection {
-    private mobiles : Mobile[];
-    private totalPrice : number;
-
-    constructor(mobiles : Mobile[]){
+    constructor(mobiles) {
         this.mobiles = mobiles;
-        this.totalPrice = this.totalPriceCalculation()
+        this.totalPrice = this.totalPriceCalculation();
     }
-
     // // GETTERS Y SETTERS
-
-    public setMobiles (mobiles : Mobile[]){
+    setMobiles(mobiles) {
         this.mobiles = mobiles;
         return mobiles;
     }
-    public getMobiles (){
+    getMobiles() {
         return this.mobiles;
     }
-
-
-    public setTotalPrice (totalPrice : number){
+    setTotalPrice(totalPrice) {
         this.totalPrice = totalPrice;
         return totalPrice;
     }
-    public getTotalPrice (){
+    getTotalPrice() {
         return this.totalPrice;
     }
-
-
     // // METODOS
-
-
-        private totalPriceCalculation(){
-            let res: number = 0
-        for (let i= 0; i < this.mobiles.length; i++){
-            res += this.mobiles[i].getPrice()
-        
-           }    return res;
-
+    totalPriceCalculation() {
+        let res = 0;
+        for (let i = 0; i < this.mobiles.length; i++) {
+            res += this.mobiles[i].getPrice();
         }
-
-        public printCollection(): string {
-        let res: string = "";
-        for (let characts of this.mobiles){
-            res += characts.characString() + "\n"
-        } 
         return res;
-
-    } 
-
-
-
-
-
+    }
+    printCollection() {
+        let res = "";
+        for (let characts of this.mobiles) {
+            res += characts.characString() + "\n";
+        }
+        return res;
+    }
 }
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 // Reto 1: Creación de la Clase con Typescript
 // 1. Trabajar en la rama repaso2 dentro de la carpeta creada en el reto anterior crear el fichero mobileCollection.ts
 // 2. Dicho fichero debe contener la clase MobileCollection con los siguientes atributos privados:
@@ -76,8 +48,6 @@ export class MobileCollection {
 // 7. Crear un objeto myCollection de la clase MobileCollection, asignarle el array que habéis
 // creado previamente y comprobar todos sus métodos.
 // 8. Subir los cambios a GitHub.
-
-
 // Reto 2: Añadir un Método Privado
 // 1. Crear un método privado denominado totalPriceCalculation sin parámetros de entrada,
 // que te calcule el precio total de la colección.
@@ -86,8 +56,6 @@ export class MobileCollection {
 // 2. En el constructor llamar totalPriceCalculation y guardarlo en su atributo correspondiente.
 // 3. Probar de nuevo el método getPrice de la clase en el fichero mobileCollectionTest.ts
 // 4. Subir los cambios a GitHub.
-
-
 // Reto 3: Añadir un Método Público
 // 1. Crear un nuevo método denominado printCollection que recorra todos los objetos del
 // atributo mobile y los muestre por consola de la siguiente manera :
