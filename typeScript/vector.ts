@@ -2,22 +2,17 @@
 
 export class Vector {
 
-    private elements : number[];
+    private elements : number[] = [];
     public n : number;
     public k : number;
 
 
     constructor(n : number, k : number){
-        let elements : number[] = [];
+        // let elements : number[] = [];
         for (let i=0; i < n ;i++){   
-            elements.push(Math.floor(Math.random() * k));  
+            this.elements.push(Math.floor(Math.random() * k));  
         } 
-        switch(this.elements){
-            case  elements:
-            break;
-
-        }
-        this.elements = elements;
+      
         this.n = n;
         this.k = k;
 
@@ -36,35 +31,57 @@ export class Vector {
 
     // // METODOS
 
-    public print(): Vector{
-        return this
+    public print(): void{
+        console.log(this)
     }
 
 
 
-    public add(v1:Vector) : void {
+    // public add(v1:Vector) : Vector {
+    //     let vectorSumado : number[] = [];
+    //     for (let i = 0; i < this.elements.length; i++){
+    //         // if (this.elements.length == v1.getElements.length){
+    //         let result = this.elements[i] + v1.getElements()[i];
+    //         vectorSumado.push(result);
+    //         // }
+    //     }
+    //     return new Vector(0,0);
+    // }
+
+    public add(v1:Vector) : Vector {
         let vectorSumado : number[] = [];
+        let recogeElements = v1.getElements();
         for (let i = 0; i < this.elements.length; i++){
             // if (this.elements.length == v1.getElements.length){
-            let result = this.elements[i] + v1.getElements()[i];
+            let result = this.elements[i] + recogeElements[i];
             vectorSumado.push(result);
             // }
         }
-        this.elements = vectorSumado;
+        let vector = new Vector(0,0);
+        vector.setElements(vectorSumado)
+        return vector;
     }
 
 
 
-    public subs(v1:Vector) : void {
+
+
+
+    public subs(v1:Vector) : Vector {
         let vectorRestado : number[] = [];
+        // let recogeElements = v1.getElements();
         for (let i = 0; i < this.elements.length; i++){
             // if (this.elements.length == v1.getElements.length){
             let result = this.elements[i] - v1.getElements()[i];
             vectorRestado.push(result);
             // }
         }
-        this.elements = vectorRestado;
+        let vector = new Vector(0,0);
+        vector.setElements(vectorRestado)
+        return vector;
     }
+
+
 
 
 
@@ -78,6 +95,8 @@ export class Vector {
         }
         this.elements = vectorMulti;
     }
+
+
 
 
 
