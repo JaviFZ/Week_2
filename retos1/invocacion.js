@@ -5,17 +5,9 @@
 // // • [“Venezuela”, “Veneno”, “Voltaje”]
 // // Para ello tendrás que exportar dichas funciones en los ficheros correspondientes.
 // // También tendrás que importar dichos ficheros en el fichero actual.
-
 import { isEven } from "./condicionales.js";
-
 import { add } from "./buclesFor.js";
-
-
 let arr1 = ["Casa", "Coche", "Ciudad", "Cesta"];
 let arr2 = ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"];
 let arr3 = ["Venezuela", "Veneno", "Voltaje"];
-
-
 console.log(isEven(add(arr1)));
-console.log(isEven(add(arr2)));
-console.log(isEven(add(arr3)));

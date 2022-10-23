@@ -4,17 +4,17 @@
 
 
 
-function evenNumbers (num : number) {
-    let cuenta : number[] = []
-    for (let i = 0; i <= num; i++){
-        if ((i % 2) !== 0){
-            cuenta.push(i);
-        } 
-    } return cuenta;
-}
+// function evenNumbers (num : number) {
+//     let cuenta : number[] = []
+//     for (let i = 0; i <= num; i++){
+//         if ((i % 2) !== 0){
+//             cuenta.push(i);
+//         } 
+//     } return cuenta;
+// }
 
 
-console.log(evenNumbers(10));
+// console.log(evenNumbers(10));
 
 
 
@@ -26,20 +26,20 @@ console.log(evenNumbers(10));
 // // La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr)
 
 
-let numeros = [4, 27, 7, 100];
+// let numeros = [4, 27, 7, 100];
 
 
 
 
-function myRevert(numeros : number[]) {
-    let salida : number[] = []
-    for (let i = numeros.length - 1; i >= 0; i--) {
-      salida.push(numeros[i]);
-    }
-    return salida;
-}
+// function myRevert(elements : any[]) {
+//     let salida : any[] = []
+//     for (let i = elements.length - 1; i >= 0; i--) {
+//       salida.push(elements[i]);
+//     }
+//     return salida;
+// }
 
-console.log(myRevert(numeros));
+// console.log(myRevert(numeros));
 
 
 
@@ -51,35 +51,24 @@ console.log(myRevert(numeros));
 // // La cabecera de la función tendrá el siguiente aspecto: function isRainbow(colors)
 
 
-let rainbow : string[] = ["rojo", "naranja", "amarillo", "verde", "azul", "violeta"];
+// let rainbow : string[] = ["rojo", "naranja", "amarillo", "verde", "azul", "violeta"];
 
-let arrayColors : string[] = ["rojo", "rojo", "rojo"];
+// let colors : string[] = ["blanco", "rojo", "negro"];
 
 
-function isRainbow (arrayColors : string[]) {
 
-    for (let i = 0; i <= arrayColors.length; i++){
-        if (arrayColors[i] == "rojo" || arrayColors[i] == "naranja" || arrayColors[i] == "amarillo" || arrayColors[i] == "verde" || arrayColors[i] == "azul" || arrayColors[i] == "violeta"){
-            return true;
-        } else {
-            return false;
-        }
-    }
-}
-
-// function isRainbow2 (arrayColors : string[]) {
-
-//     for (colors of rainbow){
-//         if ("rojo" == colors || arrayColors[i] == "naranja" || arrayColors[i] == "amarillo" || arrayColors[i] == "verde" || arrayColors[i] == "azul" || arrayColors[i] == "violeta"){
-//             return true;
+// function isRainbow(colors: string[]): void {
+//     console.log("rainbow", rainbow)
+//     for (let i = 0; i <= colors.length; i++) {
+//         if (rainbow.includes(colors[i])) {
+//             console.log(`El color ${colors[i]} está en el arcoiris`)
 //         } else {
-//             return false;
+//             console.log(`El color ${colors[i]} no está en el arcoiris`)
 //         }
 //     }
 // }
 
-
-console.log(isRainbow(arrayColors));
+// isRainbow(colors)
 
 
 
@@ -93,12 +82,15 @@ let myWorlds : string[] = ["Coche", "moto", "patin"];
 
 
 
-function add( myWorlds:string[]) {
-    let coleccion : number[] = []
-    for (let i=0 ; i<=myWorlds.length; i++){
-        coleccion.push( myWorlds[i].length[i] += myWorlds[i].length[i]);
-    }return coleccion;
+export function add( myWorlds:string[]) : number {
+    let coleccion : number = 0
+    for (let i=0 ; i<myWorlds.length; i++){
+        coleccion += myWorlds[i].length;
+    }
+    
+    return coleccion;
 }
 
 
-console.log(add(myWorlds));
+
+// console.log(add(myWorlds));
