@@ -1,4 +1,4 @@
-import {Person} from "./person";
+import {Person} from "./person.js";
 
 let person = new Person ("Javi", 32, "Paz" );
 

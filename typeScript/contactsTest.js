@@ -1,6 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Contacts_1 = require("./Contacts");
-var contacts = new Contacts_1.Contacts();
+import { Contacts } from "./Contacts.js";
+// let person = new Person ("Javi", 32, "Paz" );
+// let people = [person, person, person];
+let contacts = new Contacts();
 // console.log(contacts);
 contacts.printCalendar();

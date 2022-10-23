@@ -1,45 +1,27 @@
-
-
 export class Vector {
-
-    private elements : number[] = [];
-    public n : number;
-    public k : number;
-
-
-    constructor(n : number, k : number){
+    constructor(n, k) {
+        this.elements = [];
         // let elements : number[] = [];
-        for (let i=0; i < n ;i++){   
-            this.elements.push(Math.floor(Math.random() * k));  
-        } 
-      
+        for (let i = 0; i < n; i++) {
+            this.elements.push(Math.floor(Math.random() * k));
+        }
         this.n = n;
         this.k = k;
-
-        
     }
-
     // // GETTERS Y SETTERS
-
-    public setElements ( elements : number[]){
+    setElements(elements) {
         this.elements = elements;
         return elements;
     }
-    public getElements () : number[]{
+    getElements() {
         return this.elements;
     }
-
     // // METODOS
-
     // // imprimir por consola el vector:
-
-    public print(): void{
-        console.log(this)
+    print() {
+        console.log(this);
     }
-
-
     // // realizar la suma de elements con v1:
-
     // public add(v1:Vector) : Vector {
     //     let vectorSumado : number[] = [];
     //     for (let i = 0; i < this.elements.length; i++){
@@ -50,51 +32,39 @@ export class Vector {
     //     }
     //     return new Vector(0,0);
     // }
-
-    public add(v1:Vector) : Vector {
-        let vectorSumado : number[] = [];
+    add(v1) {
+        let vectorSumado = [];
         let recogeElements = v1.getElements();
-        for (let i = 0; i < this.elements.length; i++){
+        for (let i = 0; i < this.elements.length; i++) {
             let result = this.elements[i] + recogeElements[i];
             vectorSumado.push(result);
-            
         }
-        let vector = new Vector(0,0);
-        vector.setElements(vectorSumado)
+        let vector = new Vector(0, 0);
+        vector.setElements(vectorSumado);
         return vector;
     }
-
-
-
-
-// // Realiza la resta de elements con v1:
-
-    public subs(v1:Vector) : Vector {
-        let vectorRestado : number[] = [];
-        for (let i = 0; i < this.elements.length; i++){
+    // // Realiza la resta de elements con v1:
+    subs(v1) {
+        let vectorRestado = [];
+        for (let i = 0; i < this.elements.length; i++) {
             let result = this.elements[i] - v1.getElements()[i];
             vectorRestado.push(result);
         }
-        let vector = new Vector(0,0);
-        vector.setElements(vectorRestado)
+        let vector = new Vector(0, 0);
+        vector.setElements(vectorRestado);
         return vector;
     }
-
-
-// // Realiza el producto de elements con v1:
-
-    public mult(v1:Vector) : Vector {
-        let vectorMult : number[] = [];
-        for (let i = 0; i < this.elements.length; i++){
-            let result = this.elements[i] *  v1.getElements()[i];
+    // // Realiza el producto de elements con v1:
+    mult(v1) {
+        let vectorMult = [];
+        for (let i = 0; i < this.elements.length; i++) {
+            let result = this.elements[i] * v1.getElements()[i];
             vectorMult.push(result);
-            
         }
-        let vector = new Vector(0,0);
-        vector.setElements(vectorMult)
+        let vector = new Vector(0, 0);
+        vector.setElements(vectorMult);
         return vector;
     }
-
     // public multa(v1:Vector) : void {
     //     let vectorMulti : number[] = [];
     //     for (let i = 0; i < this.elements.length; i++){
@@ -105,23 +75,16 @@ export class Vector {
     //     }
     //     this.elements = vectorMulti;
     // }
-
-
-
-
     // // Realiza el producto entre elements y el número n:
-
-    public multNumber(n : number) : Vector {
-        let vectorProd : number[] = [];
-        for (let i = 0; i < this.elements.length; i++){
+    multNumber(n) {
+        let vectorProd = [];
+        for (let i = 0; i < this.elements.length; i++) {
             let result = this.elements[i] * n;
             vectorProd.push(result);
         }
-        let vector = new Vector(0,0)
-        vector.setElements(vectorProd)
-        return vector
+        let vector = new Vector(0, 0);
+        vector.setElements(vectorProd);
+        return vector;
     }
-}      
-
-
+}
 // let vector = new Vector(8, 10)
