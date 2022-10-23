@@ -9,7 +9,7 @@ export class MobileCollection {
 
     constructor(mobiles : Mobile[]){
         this.mobiles = mobiles;
-        // this.totalPrice = totalPriceCalculation
+        this.totalPrice = this.totalPriceCalculation()
     }
 
     // // GETTERS Y SETTERS
@@ -37,8 +37,8 @@ export class MobileCollection {
 
         private totalPriceCalculation(){
             let res: number = 0
-        for (let i= 0; i < MobileCollection.length; i++){
-            res += this.totalPrice
+        for (let i= 0; i < this.mobiles.length; i++){
+            res += this.mobiles[i].getPrice()
         
            }    return res;
 

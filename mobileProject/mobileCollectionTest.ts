@@ -18,5 +18,5 @@ let myCollection : MobileCollection = new MobileCollection(myMobiles);
 console.log(myCollection.printCollection());
 
 
-// console.log(myCollection.totalPriceCalculation());
+console.log(myCollection.getTotalPrice());
 
