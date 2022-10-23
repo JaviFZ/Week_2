@@ -1,4 +1,4 @@
-import {Mobile} from "./mobile"
+import {Mobile} from "./mobile.js"
 
 let mobile = new Mobile("Javi", "Apple", "IPhone", "Green", 1234);
 
@@ -47,7 +47,7 @@ export class MobileCollection {
         public printCollection(): string {
         let res: string = "";
         for (let characts of this.mobiles){
-            res += characts.toString()
+            res += characts.characString()
         } 
         return res;
 

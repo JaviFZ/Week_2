@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Mobile = void 0;
-var Mobile = /** @class */ (function () {
-    function Mobile(name, trademark, model, color, price) {
+export class Mobile {
+    constructor(name, trademark, model, color, price) {
         this.name = name;
         this.trademark = trademark;
         this.model = model;
@@ -10,53 +7,51 @@ var Mobile = /** @class */ (function () {
         this.price = price;
     }
     // // GETTERS Y SETTERS
-    Mobile.prototype.setName = function (name) {
+    setName(name) {
         this.name = name;
         return name;
-    };
-    Mobile.prototype.getName = function () {
+    }
+    getName() {
         return this.name;
-    };
-    Mobile.prototype.setTrademark = function (trademark) {
+    }
+    setTrademark(trademark) {
         this.trademark = trademark;
         return trademark;
-    };
-    Mobile.prototype.getTrademark = function () {
+    }
+    getTrademark() {
         return this.trademark;
-    };
-    Mobile.prototype.setModel = function (model) {
+    }
+    setModel(model) {
         this.model = model;
         return model;
-    };
-    Mobile.prototype.getModel = function () {
+    }
+    getModel() {
         return this.model;
-    };
-    Mobile.prototype.setColor = function (color) {
+    }
+    setColor(color) {
         this.color = color;
         return color;
-    };
-    Mobile.prototype.getColor = function () {
+    }
+    getColor() {
         return this.color;
-    };
-    Mobile.prototype.setPrice = function (price) {
+    }
+    setPrice(price) {
         this.price = price;
         return price;
-    };
-    Mobile.prototype.getPrice = function () {
+    }
+    getPrice() {
         return this.price;
-    };
+    }
     // // METODOS
-    Mobile.prototype.characString = function () {
+    characString() {
         return "The characteristics of the mobile " + this.name + " are" + "\n" +
             "Name: " + this.name + "\n" +
             "Trademark: " + this.trademark + "\n" +
             "Model: " + this.model + "\n" +
             "Color: " + this.model + "\n" +
             "Price: " + this.price;
-    };
-    return Mobile;
-}());
-exports.Mobile = Mobile;
+    }
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Reto 1: Creación de la Clase con Typescript
 // 1. Trabajar en la rama repaso2, crear una nueva carpeta denominada mobileProject y

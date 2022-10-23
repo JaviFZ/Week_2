@@ -1,9 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var mobile_1 = require("./mobile");
-var myMobile = new mobile_1.Mobile("celular", "Huawei", "p10", "black", 1300);
-var myMobile2 = new mobile_1.Mobile("Kia", "Nokia", "3310", "blue", 300);
-var myMobile3 = new mobile_1.Mobile("iPhone", "Apple", "10", "green", 1800);
-var myMobiles = [myMobile, myMobile2, myMobile3];
-// console.log(myMobiles.charactString());
+import { Mobile } from "./mobile.js";
+let myMobile = new Mobile("celular", "Huawei", "p10", "black", 1300);
+let myMobile2 = new Mobile("Kia", "Nokia", "3310", "blue", 300);
+let myMobile3 = new Mobile("iPhone", "Apple", "10", "green", 1800);
+let myMobiles = [myMobile, myMobile2, myMobile3];
+for (let i = 0; i < myMobiles.length; i++) {
+    const element = myMobiles[i];
+    console.log(element.characString());
+}
 // Mobile.setName("juan");

@@ -1,6 +1,6 @@
-import {Mobile} from "./mobile"
+import {Mobile} from "./mobile.js"
 
-import {MobileCollection} from "./mobileCollection"
+import {MobileCollection} from "./mobileCollection.js"
 
 
 
@@ -15,7 +15,7 @@ let myMobiles : Mobile[] = [mobile1, mobile2, mobile3, mobile4];
 
 let myCollection : MobileCollection = new MobileCollection(myMobiles);
 
-console.log(myCollection);
+console.log(myCollection.printCollection());
 
 
 // console.log(myCollection.totalPriceCalculation());
