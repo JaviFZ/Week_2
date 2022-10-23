@@ -90,7 +90,16 @@ export class Point {
     // // de dicho array que esté más cercano al punto actual.
     // // NOTA: Utilizar para ello el método calculateDistance implementado en el reto3.
 
-    
+   
+    public calculateNearest(points : Point[]): Point {
+        // let acumulator = []
+        for (let i = 0; i < points.length; i++) {
+            if (points[i].calculateDistance(this) < points[i].calculateDistance(this)) {
+                points[i] = points[i][0];
+            } 
+            
+        } return points[0]
+    }
 
 
 }

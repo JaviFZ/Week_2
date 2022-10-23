@@ -15,7 +15,7 @@
 import { Point } from "./point";
 
 
-class Triangle{
+export class Triangle{
     private vertex1: Point;
     private vertex2: Point;
     private vertex3: Point;
@@ -26,9 +26,38 @@ class Triangle{
         this.vertex3 = vertex3;
     }
 
-    // public calculateLengthSides() : number[]{
+    public setVertex1 (vertex1 : Point){
+        this.vertex1 = vertex1;
+        return vertex1;
+    }
+    public getVertex1 (){
+        return this.vertex1;
+    }
 
-    // }
+    public setVertex2 (vertex2 : Point){
+        this.vertex2 = vertex2;
+        return vertex2;
+    }
+    public getVeertex2 (){
+        return this.vertex2;
+    }
+
+    public setVertex3 (vertex3 : Point){
+        this.vertex3 = vertex3;
+        return vertex3;
+    }
+    public getVertex3 (){
+        return this.vertex3;
+    }
+
+
+
+    public calculateLengthSides() : number[]{
+
+        return [this.vertex1.calculateDistance(this.vertex2), this.vertex2.calculateDistance(this.vertex3), this.vertex3.calculateDistance(this.vertex1)]
+            
+        
+    }
 
 
 }
