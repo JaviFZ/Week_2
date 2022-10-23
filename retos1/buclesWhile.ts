@@ -2,18 +2,18 @@
 // // introduces como parámetro de entrada.
 // // La cabecera de la función tendrá el siguiente aspecto: function hasEven(myNums)
 
-// let numbers = [1, 1, 1, 1];
+let numbers = [1, 1, 3, 1];
 
-// function hasEven(numbers : number[]) {
-//     let i = 0;
-//     while (i < numbers.length){
-//         if( numbers[i] % 2 == 0){
-//             return true;
-//         }
-//         i++;
-//     } 
-//     return false;
-// }
+function hasEven(numbers : number[]) {
+    let i = 0;
+    while (i < numbers.length){
+        if( numbers[i] % 2 == 0){
+            return true;
+        }
+        i++;
+    } 
+    return false;
+}
 
 // console.log(hasEven(numbers));
 
@@ -26,7 +26,7 @@
 // // todos los nombres empiezan por M.
 // // La cabecera de la función tendrá el siguiente aspecto: function startWithM(myNames)
 
-let nombres = ["Mario", "Medro", "Maite"];
+let nombres = ["Mario", "Pedro", "Maite"];
 
 function startWithM (nombres : string[]) {
     // let contador = true;
@@ -40,5 +40,5 @@ function startWithM (nombres : string[]) {
     return true;
 }
 
-console.log(startWithM(nombres));
+// console.log(startWithM(nombres));
 

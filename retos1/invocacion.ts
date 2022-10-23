@@ -16,6 +16,6 @@ let arr2 = ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"];
 let arr3 = ["Venezuela", "Veneno", "Voltaje"];
 
 
-console.log(isEven(add(arr1)));
-console.log(isEven(add(arr2)));
-console.log(isEven(add(arr3)));
+isEven(add(arr1));
+isEven(add(arr2));
+isEven(add(arr3));

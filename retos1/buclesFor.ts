@@ -4,14 +4,14 @@
 
 
 
-// function evenNumbers (num : number) {
-//     let cuenta : number[] = []
-//     for (let i = 0; i <= num; i++){
-//         if ((i % 2) !== 0){
-//             cuenta.push(i);
-//         } 
-//     } return cuenta;
-// }
+function evenNumbers (num : number) {
+    let cuenta : number[] = []
+    for (let i = 0; i <= num; i++){
+        if ((i % 2) !== 0){
+            cuenta.push(i);
+        } 
+    } return cuenta;
+}
 
 
 // console.log(evenNumbers(10));
@@ -26,20 +26,20 @@
 // // La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr)
 
 
-// let numeros = [4, 27, 7, 100];
+let elements = [4, 27, 7, 100];
 
 
 
 
-// function myRevert(elements : any[]) {
-//     let salida : any[] = []
-//     for (let i = elements.length - 1; i >= 0; i--) {
-//       salida.push(elements[i]);
-//     }
-//     return salida;
-// }
+function myRevert(elements : any[]) {
+    let salida : any[] = []
+    for (let i = elements.length - 1; i >= 0; i--) {
+      salida.push(elements[i]);
+    }
+    return salida;
+}
 
-// console.log(myRevert(numeros));
+// console.log(myRevert(elements));
 
 
 
@@ -51,22 +51,22 @@
 // // La cabecera de la función tendrá el siguiente aspecto: function isRainbow(colors)
 
 
-// let rainbow : string[] = ["rojo", "naranja", "amarillo", "verde", "azul", "violeta"];
+let rainbow : string[] = ["rojo", "naranja", "amarillo", "verde", "azul", "violeta"];
 
-// let colors : string[] = ["blanco", "rojo", "negro"];
+let colors : string[] = ["blanco", "rojo", "negro"];
 
 
 
-// function isRainbow(colors: string[]): void {
-//     console.log("rainbow", rainbow)
-//     for (let i = 0; i <= colors.length; i++) {
-//         if (rainbow.includes(colors[i])) {
-//             console.log(`El color ${colors[i]} está en el arcoiris`)
-//         } else {
-//             console.log(`El color ${colors[i]} no está en el arcoiris`)
-//         }
-//     }
-// }
+function isRainbow(colors: string[]): void {
+    console.log("rainbow", rainbow)
+    for (let i = 0; i < colors.length; i++) {
+        if (rainbow.includes(colors[i])) {
+            console.log(`El color ${colors[i]} está en el arcoiris`)
+        } else {
+            console.log(`El color ${colors[i]} no está en el arcoiris`)
+        }
+    }
+}
 
 // isRainbow(colors)
 
