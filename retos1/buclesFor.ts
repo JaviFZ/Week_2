@@ -10,11 +10,12 @@ function evenNumbers (num : number) {
         if ((i % 2) !== 0){
             cuenta.push(i);
         } 
-    } return cuenta;
+    } console.log(cuenta);
+    
 }
 
 
-// console.log(evenNumbers(10));
+evenNumbers(10);
 
 
 
