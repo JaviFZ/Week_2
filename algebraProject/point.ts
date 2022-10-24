@@ -58,7 +58,7 @@ export class Point {
 
     public calculateDistance(anotherPoint : Point): number {
         
-        let distancia : number = Math.sqrt((anotherPoint.getX()-this.x)*(anotherPoint.getX()-this.x)+(anotherPoint.getY()-this.y)*(anotherPoint.getY()-this.y));
+        let distancia : number = Math.sqrt((anotherPoint.x-this.x)*(anotherPoint.x-this.x)+(anotherPoint.y-this.y)*(anotherPoint.y-this.y));
         return distancia;
     }
 
@@ -90,17 +90,16 @@ export class Point {
     // // de dicho array que esté más cercano al punto actual.
     // // NOTA: Utilizar para ello el método calculateDistance implementado en el reto3.
 
-   // // FALTA TERMINAR:
    
-//     public calculateNearest(points : Point[]): Point {
-//         let acumulator : Point = Point[0]
-//         for (let i = 0; i < points.length; i++) {
-//             if (points[1].calculateDistance(this) < points[i].calculateDistance(this)) {
-//                 points[1] = points[0];
-//                 points[0] = acumulator
-//             }           
-//         } return acumulator;
-//     }
-// }
+    public calculateNearest(points : Point[]): Point {
+        let accumulator : Point = Point[0]
+        for (let i = 0; i < points.length; i++) {
+            if (this.calculateDistance(points[i]) < this.calculateDistance(accumulator)) {
+                
+                accumulator = points[i]
+            }           
+        } return accumulator;
+    }
+}
 
 

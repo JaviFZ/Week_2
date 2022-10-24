@@ -1,4 +1,4 @@
-import {Point} from "./point.js";
+import {Point} from "./point";
 
 
 
@@ -17,15 +17,15 @@ let arrayPoints = [point1, point2, point3];
 console.log(point);
 
 
-// console.log(point.toString());
+console.log(point.toString());
 
 
-// console.log(point.distanceToOrigin());
+console.log(point.distanceToOrigin());
 
-// console.log(point.calculateDistance(point1));
+console.log(point.calculateDistance(point1));
 
 
-// console.log(point.calcularQuadrant());
+console.log(point.calcularQuadrant());
 
 console.log(point.calculateNearest(arrayPoints));
 
