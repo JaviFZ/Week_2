@@ -1,4 +1,4 @@
-import {Vector} from "./vector.js";
+import {Vector} from "./vector";
 
 
 let v1 = new Vector(6, 10);
