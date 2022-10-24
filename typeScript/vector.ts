@@ -21,13 +21,13 @@ export class Vector {
 
     // // GETTERS Y SETTERS
 
-    public setElements ( elements : number[]){
-        this.elements = elements;
-        return elements;
-    }
-    public getElements () : number[]{
-        return this.elements;
-    }
+    // public setElements ( elements : number[]){
+    //     this.elements = elements;
+    //     return elements;
+    // }
+    // public getElements () : number[]{
+    //     return this.elements;
+    // // }
 
     // // METODOS
 
@@ -52,15 +52,10 @@ export class Vector {
     // }
 
     public add(v1:Vector) : Vector {
-        let vectorSumado : number[] = [];
-        let recogeElements = v1.getElements();
+        let vector : Vector = new Vector(0,0);
         for (let i = 0; i < this.elements.length; i++){
-            let result = this.elements[i] + recogeElements[i];
-            vectorSumado.push(result);
-            
+            vector.elements.push(this.elements[i] + v1.elements[i]);
         }
-        let vector = new Vector(0,0);
-        vector.setElements(vectorSumado)
         return vector;
     }
 
