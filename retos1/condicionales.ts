@@ -5,35 +5,37 @@
 
 
 function zodiac(day : number, month : string)  {
+    let result : string = ""
     if ((day >= 21 && day <=31 && month =="marzo") || (day <=20 && month == "abril")){
-        return "Aries";
+        result = "Aries";
     } else if ((day >= 21 && day <=31 && month =="abril") || (day <=21 && month == "mayo")){
-        return "Tauro";
+        result = "Tauro";
     } else if ((day >= 22 && day <=31 && month =="mayo") || (day <=21 && month == "junio")){
-        return "Géminis";
+        result = "Géminis";
     } else if ((day >= 22 && day <=31 && month =="junio") || (day <=22 && month == "julio")){
-        return "Cáncer";
+        result = "Cáncer";
     } else if ((day >= 23 && day <=31 && month =="julio") || (day <=23 && month == "agosto")){
-        return "Leo";
+        result = "Leo";
     } else if ((day >= 24 && day <=31 && month =="agosto") || (day <=23 && month == "septiembre")){
-        return "Virgo";
+        result = "Virgo";
     } else if ((day >= 24 && day <=31 && month =="septiembre") || (day <=23 && month == "octubre")){
-        return "Libra";
+        result = "Libra";
     } else if ((day >= 24 && day <=31 && month =="octubre") || (day <=22 && month == "noviembre")){
-        return "Escorpio";
+        result = "Escorpio";
     } else if ((day >= 23 && day <=31 && month =="noviembre") || (day <=21 && month == "diciembre")){
-        return "Sagitario";
+        result = "Sagitario";
     } else if ((day >= 22 && day <=31 && month =="diciembre") || (day <=20 && month == "enero")){
-        return "Capricornio";
+        result = "Capricornio";
     } else if ((day >= 21 && day <=31 && month =="enero") || (day <=18 && month == "febrero")){
-        return "Acuario";
+        result = "Acuario";
     } else if ((day >= 19 && day <=31 && month =="febrero") || (day <=20 && month == "marzo")){
-        return "Piscis";
+        result = "Piscis";
     } 
+    return result;
 }
 
 
-// console.log(zodiac(25, "febrero"));
+console.log(zodiac(25, "febrero"));
 
 
 
