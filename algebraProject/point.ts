@@ -92,7 +92,7 @@ export class Point {
 
    
     public calculateNearest(points : Point[]): Point {
-        let accumulator : Point = Point[0]
+        let accumulator : Point = points[0]
         for (let i = 0; i < points.length; i++) {
             if (this.calculateDistance(points[i]) < this.calculateDistance(accumulator)) {
                 
