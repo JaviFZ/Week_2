@@ -9,7 +9,7 @@ let myMobiles : Mobile[] = [myMobile, myMobile2, myMobile3];
 
 
 for (let i = 0; i < myMobiles.length; i++) {
-    const element = myMobiles[i];
+    let element = myMobiles[i];
     console.log(element.characString());
 }
 
